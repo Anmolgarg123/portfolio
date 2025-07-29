@@ -1,12 +1,16 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, AfterViewInit, ViewChild, ElementRef } from '@angular/core';
+import { Chart } from 'chart.js/auto';
+import { TimelineSectionComponent } from '../app/timeline-section/timeline-section.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
+  imports: [TimelineSectionComponent]
 })
 export class AppComponent {
-  title = 'data-science-portfolio';
+  //@ViewChild('skillsChartCanvas') skillsChartRef!: ElementRef<HTMLCanvasElement>;
+  //chart!: Chart;
+
 }

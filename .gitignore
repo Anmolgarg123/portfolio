@@ -39,4 +39,14 @@ testem.log
 
 # System files
 .DS_Store
+
+# Ignore Visual Studio files
+.vs/
+*.user
+*.suo
+
+# Ignore node modules and build folders
+node_modules/
+dist/
+.env
 Thumbs.db
